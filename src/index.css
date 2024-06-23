@@ -9,4 +9,11 @@
 #root{
     min-height: 100vh;
     display: flex;
+    animation: fadeIn;
+    -webkit-animation: fadeIn 1.5s linear;
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }

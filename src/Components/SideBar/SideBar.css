@@ -9,10 +9,11 @@
 }
 .sideBar img{
     width: 20px;
+  
 }
 .sideBar .menu{
     display: block;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     cursor: pointer;
 }
 .sideBar .new-chat{
@@ -34,7 +35,8 @@
 .sideBar .recent{
     display: flex;
     flex-direction: column;
-
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
 }
 .sideBar .recent-title{
     margin-block: 30px 20px;
@@ -69,4 +71,9 @@ flex-direction: column;
 .sideBar .bottom-item{
     padding-right: 10px;
     cursor: pointer;
+}
+@media (max-width:600px){
+    .sideBar{
+        display: none;
+    }
 }
